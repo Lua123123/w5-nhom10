@@ -75,7 +75,9 @@
             app:destination="@id/fragmentSignUp" />
         <action
             android:id="@+id/action_fragmentLogin_to_fragmentHomeScreen"
-            app:destination="@id/fragmentHomeScreen" />
+            app:destination="@id/fragmentHomeScreen"
+            app:popUpTo="@id/fragmentSplash"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/fragmentSignUp"
@@ -92,7 +94,9 @@
         tools:layout="@layout/fragment_home_screen" >
         <action
             android:id="@+id/action_fragmentHomeScreen_to_fragmentProfile"
-            app:destination="@id/fragmentProfile" />
+            app:destination="@id/fragmentProfile"
+            app:popUpTo="@id/fragmentHomeScreen"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/fragmentProfile"
